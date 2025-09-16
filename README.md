@@ -1,7 +1,3 @@
-# ZethOne.github.io
-
-# Define the HTML content for Jonathan Saldivar's custom homepage
-html_content = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -68,7 +64,7 @@ html_content = """<!DOCTYPE html>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Feel free to reach out via <a href="mailto:your.email@example.com" style="color:#00d8ff;">email</a> or connect with me on <a href="https://www.linkedin.com" style="color:#00d8ff;">LinkedIn</a>.</p>
+    <p>Feel free to reach out via <a href="mailto:jsaldivara@hotmail.com" style="color:#00d8ff;">email</a> or connect with me on <a href="[https://www.linkedin.com](https://www.linkedin.com/in/jonathan-saldivar-357b001ab/)" style="color:#00d8ff;">LinkedIn</a>.</p>
   </section>
 
   <footer>
@@ -76,11 +72,5 @@ html_content = """<!DOCTYPE html>
   </footer>
 </body>
 </html>
-"""
 
-# Write the HTML content to a file
-with open("index.html", "w", encoding="utf-8") as file:
-    file.write(html_content)
-
-print("The custom homepage HTML file has been generated as 'index.html'.")
 
