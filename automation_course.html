@@ -11,10 +11,11 @@
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: #fff;
-      text-align: center;
+      
     }
     header {
       padding: 60px 20px;
+      text-align: center;
     }
     h1 {
       font-size: 3em;
@@ -36,39 +37,219 @@
     section {
       padding: 40px 20px;
     }
+    h2 {
+            color: #34495e;
+            margin-top: 30px;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;            
+    }
+    li {
+      margin-bottom: 5px;
+      color: #111;
+    }
+    strong {
+      color: #2980b9;
+    }
     footer {
       background-color: #111;
       padding: 20px;
       font-size: 0.9em;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      padding: 20px;
+      background-color: rgb(215, 233, 240);
+    }
+
+    .column {
+      flex: 1;
+      padding: 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      background-color: rgb(253, 253, 253);
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Introducción a la automatización de pruebas de software, WEB y API</h1>
-    <p>Customer Lead | Passionate about People, Strategy & Innovation</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <h1>Jonathan Saldivar</h1>
+    <p>Customer Lead | SDET Manager| Passionate about People, Strategy & Innovation</p>    
+      <nav>
+        <a href="index.html"> > Home</a>
     </nav>
+    <h1>Introducción a la automatización de pruebas de software, WEB y API</h1>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Welcome to my personal site! I'm a Customer Lead focused on driving impact through leadership, collaboration, and customer-centric strategies.</p>
-  </section>
+  <div class="container">
+    <div class="column">
+    <h2>Temario:</h2>
+    <ul>
+        <li><strong>Comenzando con Playwright:</strong>
+            <ul>
+                <li>¿Qué es Playwright?</li>
+                <li>Ventajas y desventajas</li>
+                <li>Arquitectura de Playwright</li>
+                <li>Playwright vs Cypress vs Selenium WebDriver</li>
+            </ul>
+        </li>
+        <li><strong>Requerimientos de software:</strong>
+            <ul>
+                <li>Node JS</li>
+                <li>VS Code</li>
+                <li>Sistema operativo: Windows, Mac, Linux</li>
+                <li>Git: GitHub</li>
+                <li>GitHub Actions</li>
+                <li>Postman Tool para pruebas exploratorias de API</li>
+            </ul>
+        </li>
+        <li><strong>Instalación y configuración:</strong>
+            <ul>
+                <li>Instalar Playwright</li>
+                <li>Estructura por default de Playwright</li>
+                <li>Playwright Test explorer – Filter, Run y Debug tests</li>
+                <li>Configuración de Playwright usando línea de comandos (CMD, Terminal)</li>
+                <li>Grabar una prueba usando VS Code</li>
+                <li>Generar Informe de pruebas HTML</li>
+                <li>Correr una prueba en buscadores Google Chrome, Edge y Firefox usando VS Code</li>
+                <li>Generar Informe de pruebas HTML de Playwright</li>
+            </ul>
+        </li>
+        <li><strong>Terminologías y conceptos básicos:</strong>
+            <ul>
+                <li>Escribir nuestra primera prueba automatizada en Playwright</li>
+                <li>Seleccionar un Locator en VS Code</li>
+                <li>Grabar con el cursor</li>
+                <li>Ejecutar un archivo Spec específico</li>
+                <li>Correr pruebas en Headless mode</li>
+                <li>Correr pruebas en Headed mode</li>
+                <li>Correr pruebas en diferentes buscadores usando la línea de comandos</li>
+                <li>Uso de característica CODE GEN</li>
+            </ul>
+        </li>
+        <li><strong>Elementos básicos de la automatización:</strong>
+            <ul>
+                <li>Assertions, Capturas de pantalla, Locators, Hooks, etc.</li>
+                <li>Tomar capturas de pantalla (Page, Element, Full page)</li>
+                <li>Agregar capturas de pantalla al Informe de pruebas HTML</li>
+                <li>Test fallido</li>
+                <li>Ejemplos de Locators</li>
+                <li>Hooks: BeforeEach, AfterEach, BeforeAll, AfterAll</li>
+                <li>Manejo de Dropdown, IFrames, cambiar entre frames</li>
+                <li>Arrastrar y soltar elementos</li>
+                <li>Acciones con el ratón y teclado</li>
+                <li>Seleccionar un valor de un Date Field</li>
+                <li>Assertions: Hard, Soft</li>
+            </ul>
+        </li>
+        <li><strong>Playwright UI y herramientas:</strong>
+            <ul>
+                <li>Watch mode</li>
+                <li>VS Code</li>
+                <li>UI, Level, Project, Spec file, Test</li>
+                <li>Playwright UI</li>
+                <li>Trace viewer</li>
+                <li>Trazos de la prueba</li>
+                <li>Acciones del meta data</li>
+                <li>Consola, Registros (Logs), Red (Network)</li>
+            </ul>
+        </li>
+        <li><strong>Automatización avanzada en Playwright:</strong>
+            <ul>
+                <li>Repeat, Retry, Timeouts, Annotations, Visual Comparison</li>
+                <li>Anotaciones: Skip test, Only, Grupos de pruebas, Etiquetas de pruebas</li>
+                <li>Repetir, Reintentar, Parametrizado de pruebas</li>
+                <li>Visual Comparison – captura de pantalla de páginas y elementos</li>
+                <li>Timeouts en diferentes niveles</li>
+                <li>Pruebas, Assertions, Acciones</li>
+            </ul>
+        </li>
+        <li><strong>Características adicionales:</strong>
+            <ul>
+                <li>Archivo tsconfig.json</li>
+                <li>Browser Context – múltiples sesiones/pestañas/páginas</li>
+                <li>Re-ejecutar solo pruebas falladas</li>
+                <li>Manejo de Popups/Alertas/Cuadros de diálogo</li>
+                <li>Generar otros tipos de Informe de pruebas Playwright: Junit, JSON, List, Dot</li>
+                <li>Video grabación (Video recording)</li>
+                <li>Ejecución de pruebas en paralelo</li>
+                <li>Integración de Reporte Allure con Playwright</li>
+            </ul>
+        </li>
+        <li><strong>Funciones y manejo de datos:</strong>
+            <ul>
+                <li>Funciones: TextContent(), InnerText(), getAttribute()</li>
+                <li>Iterar a través de todos los elementos que empatan</li>
+                <li>Manejo de checkbox y radio buttons</li>
+                <li>Automatización escalable y flexible</li>
+                <li>Archivo .env</li>
+                <li>Data Driven Testing usando archivos JSON, CSV, EXCEL</li>
+                <li>Patrón de diseño Page Object Model (POM)</li>
+                <li>Ejecutar solo archivos Spec modificados</li>
+                <li>Tamaño de pantalla, Screen browser y View Port Size</li>
+                <li>Fixtures – implementar Hooks globales</li>
+                <li>Optimizar POM usando Fixture</li>
+                <li>Ejecutar pruebas en diferentes ambientes – QA, STAGE, DEV, PROD</li>
+            </ul>
+        </li>
+        <li><strong>Automatización de backend y API mocking:</strong>
+            <ul>
+                <li>Crear peticiones API: POST, GET, PUT, DELETE</li>
+                <li>Validar status code, status text, response text y API response</li>
+                <li>API Mocking: ¿Qué es?, pruebas vs mocking</li>
+                <li>Mocking API desde archivos HAR – grabar, modificar y replicar</li>
+            </ul>
+        </li>
+        <li><strong>Integración con GitHub Actions:</strong>
+            <ul>
+                <li>Crear archivo .yml (YAML) para GitHub Actions</li>
+                <li>Ejecutar Playwright usando GitHub Actions</li>
+                <li>Auto ejecución de un Workflow</li>
+                <li>Adjuntar el Reporte Playwright como un artifact</li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+    <div class="column">
+      <h2>Informacion del curso:</h2>
+      <li><strong>Categoria:</strong>
+            <ul>
+                <li>Testing</li>
+            </ul>
+        </li>
+        <li><strong>Modalidad:</strong>
+            <ul>
+                <li>Sabatino</li>
+            </ul>
+        </li>
+        <li><strong>Lugar:</strong>
+            <ul>
+                <li>En Linea via Zoom</li>
+            </ul>
+        </li>
+        <li><strong>Nivel:</strong>
+            <ul>
+                <li>Principiante</li>
+            </ul>
+        </li>
+        <li><strong>Duracion:</strong>
+            <ul>
+                <li>19 horas con 45 minutos</li>
+            </ul>
+        </li>
+        <li><strong>Contacto:</strong>
+            <ul>
+                <li><a href="mailto:jsaldivara@hotmail.com">email</a></li>
+            </ul>
+        </li>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>Coming soon: a showcase of my work, initiatives, and contributions.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Feel free to reach out via <a href="mailto:your.email@example.com" style="color:#00d8ff;">email</a> or connect with me on <a href="https://www.linkedin.com" style="color:#00d8ff;">LinkedIn</a>.</p>
-  </section>
-
+    </div>    
+  </div>
+  
+    
   <footer>
     <p>&copy; 2025 Jonathan Saldivar. All rights reserved.</p>
   </footer>
